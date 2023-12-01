@@ -8,7 +8,7 @@
 @stop
 
 @section('content')
-    <p>Parcial: Christian Alexander Erazo Pantoja.</p>
+    <p>Parcial: Christian Alexander Erazo Pantoja.   </p>
 @stop
 
 @section('css')
