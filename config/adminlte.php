@@ -63,7 +63,7 @@ return [
     |
     */
 
-    'logo' => '<b>Academica</b>',
+    'logo' => '<b>Libreria</b>',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -312,32 +312,22 @@ return [
             'can'  => 'manage-blog',
         ],
         
-        ['header' => 'Sistema Academico'],
+        ['header' => 'Sistema Gestor de Libros'],
         [
-            'text' => 'Facultades',
-            'url'  => '/facultades/listado',
+            'text' => 'Libros',
+            'url'  => '/christian/libros',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
-            'text' => 'Programas',
-            'url'  => '/programas/listado',
+            'text' => 'Areas',
+            'url'  => '/christian/areas',
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
-            'text' => 'Docentes',
-            'url'  => '/docentes/listado',
+            'text' => 'Libreria',
+            'url'  => '/christian/presentacion',
             'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
-            'text' => 'Estudiantes',
-            'url'  => '/estudiantes/listado',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
-        [
-            'text' => 'Materias',
-            'url'  => '/materias/listado',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
+        ]
         /*
         [
             'text'    => 'multilevel',

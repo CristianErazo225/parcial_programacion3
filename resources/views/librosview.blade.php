@@ -7,7 +7,6 @@
 @stop
 
 @section('content') 
-    <p>Contenido.</p>
     
     <table class="table">
         <thead>
@@ -15,15 +14,20 @@
                 <th scope="col"></th>
                 <th scope="col"></th>
                 <th scope="col"></th>
-                <th colspan="110"><a type="button" href="/facultades/registrar" 
-                        class="btn btn-success">adicionar</a></th>
-                <!-- <th colspan="110"><button  class="btn btn-success">Registrar</button></th> -->
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
             </tr>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">Codigo</th>
+                <th scope="col">ISBN</th>
                 <th scope="col">Nombre</th>
-                <th scope="col">Opcion</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Genero</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Observacion</th>
+                <th scope="col">Foto</th>
+                <th scope="col">Area</th>
             </tr>
         </thead>
         <tbody>
@@ -31,21 +35,24 @@
             @php
                 $i = 1;
             @endphp
-            @foreach($faculty as $f) <!--Recibe los datos-->
+            @foreach($book as $f) <!--Recibe los datos-->
                 <tr>
                     <th scope="row">{{$i}}</th>
-                    <td>{{$f->codfacultad}}</td>
-                    <td>{{$f->nomfacultad}}</td>
-                    <td>
-                        <a href="{{ route('editar_fac', $f->codfacultad)}}" class="btn btn-primary">editar</a>
-                        <a href="{{ route('eliminar_fac', $f->codfacultad)}}" class="btn btn-danger">Eliminar</a>
-                    </td>
+                    <td>{{$f->ISBN}}</td>
+                    <td>{{$f->nombre}}</td>
+                    <td>{{$f->descripcion}}</td>
+                    <td>{{$f->generoLiterario}}</td>
+                    <td>{{$f->precioUnitario}}</td>
+                    <td>{{$f->observacion}}</td>
+                    <td>{{$f->foto}}</td>
+                    <td>{{$f->areaconocimiento}}</td>
+                    
+                    
                     @php
                         $i = $i + 1;
                     @endphp
                 </tr>
             @endforeach
-
             
         </tbody>
     </table>

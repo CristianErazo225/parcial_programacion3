@@ -8,7 +8,7 @@
 @stop
 
 @section('content')
-    <p>Welcome to this beautiful admin panel.</p>
+    <p>Parcial: Christian Alexander Erazo Pantoja.</p>
 @stop
 
 @section('css')
